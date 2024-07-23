@@ -23,11 +23,15 @@
     <header class="header">
       <div class="container header-container">
         <nav class="header-nav">
-          <a
-            href="./index.html"
-            class="header-logo vertical-padding margin-right"
+          <a href="./index.html" class="header-logo vertical-padding"
             >Web<span class="web">Studio</span></a
           >
+
+          <button class="burger-btn vertical-padding">
+            <svg class="burger-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-burger"></use>
+            </svg>
+          </button>
 
           <ul class="header-list">
             <li class="header-nav-item">
@@ -51,14 +55,14 @@
             <li class="header-info-item">
               <a
                 href="mailto:info@devstudio.com"
-                class="header-info-link vertical-padding"
+                class="header-info-link vertical-padding-top"
                 >info@devstudio.com</a
               >
             </li>
             <li class="header-info-item">
               <a
                 href="tel:+110001111111"
-                class="header-info-link vertical-padding"
+                class="header-info-link vertical-padding-bottom"
                 >+11 (000) 111-11-11</a
               >
             </li>
@@ -75,7 +79,7 @@
         </div>
       </section>
 
-      <section class="benefits section">
+      <section class="section">
         <div class="container">
           <h2 class="second-title visually-hidden">Benefits</h2>
           <ul class="benefits-list">
@@ -85,7 +89,7 @@
                   <use href="./images/icons.svg#icon-antenna"></use>
                 </svg>
               </div>
-              <h3 class="third-title margin">Strategy</h3>
+              <h3 class="benefits-title margin">Strategy</h3>
               <p class="benefits-paragraph">
                 Our goal is to identify the business problem to walk away with
                 the perfect and creative solution.
@@ -97,7 +101,7 @@
                   <use href="./images/icons.svg#icon-clock"></use>
                 </svg>
               </div>
-              <h3 class="third-title margin">Punctuality</h3>
+              <h3 class="benefits-title margin">Punctuality</h3>
               <p class="benefits-paragraph">
                 Bring the key message to the brand's audience for the best price
                 within the shortest possible time.
@@ -109,7 +113,7 @@
                   <use href="./images/icons.svg#icon-diagram"></use>
                 </svg>
               </div>
-              <h3 class="third-title margin">Diligence</h3>
+              <h3 class="benefits-title margin">Diligence</h3>
               <p class="benefits-paragraph">
                 Research and confirm brands that present the strongest digital
                 growth opportunities and minimize risk.
@@ -121,7 +125,7 @@
                   <use href="./images/icons.svg#icon-astronaut"></use>
                 </svg>
               </div>
-              <h3 class="third-title margin">Technologies</h3>
+              <h3 class="benefits-title margin">Technologies</h3>
               <p class="benefits-paragraph">
                 Design practice focused on digital experiences. We bring forth a
                 deep passion for problem-solving.
@@ -136,7 +140,12 @@
           <h2 class="second-title title-margin">Our Team</h2>
           <ul class="team-list">
             <li class="team-item">
-              <img src="./images/img-1.jpg" alt="Mark Guerrero" width="264" />
+              <img
+                srcset="./images/img-1.jpg 1x, ./images/img-1@2x.jpg 2x"
+                src="./images/img-1.jpg"
+                alt="Mark Guerrero"
+                width="264"
+              />
               <div class="person-info">
                 <h3 class="third-team-title margin">Mark Guerrero</h3>
                 <p class="team-paragraph">Product Designer</p>
@@ -174,7 +183,12 @@
               </div>
             </li>
             <li class="team-item">
-              <img src="./images/img-2.jpg" alt="Tom Ford" width="264" />
+              <img
+                srcset="./images/img-2.jpg 1x, ./images/img-2@2x.jpg 2x"
+                src="./images/img-2.jpg"
+                alt="Tom Ford"
+                width="264"
+              />
               <div class="person-info">
                 <h3 class="third-team-title margin">Tom Ford</h3>
                 <p class="team-paragraph">Frontend Developer</p>
@@ -212,7 +226,12 @@
               </div>
             </li>
             <li class="team-item">
-              <img src="./images/img-3.jpg" alt="Camila Garcia" width="264" />
+              <img
+                srcset="./images/img-3.jpg 1x, ./images/img-3@2x.jpg 2x"
+                src="./images/img-3.jpg"
+                alt="Camila Garcia"
+                width="264"
+              />
               <div class="person-info">
                 <h3 class="third-team-title margin">Camila Garcia</h3>
                 <p class="team-paragraph">Marketing</p>
@@ -250,7 +269,12 @@
               </div>
             </li>
             <li class="team-item">
-              <img src="./images/img-4.jpg" alt="Daniel Wilson" width="264" />
+              <img
+                srcset="./images/img-4.jpg 1x, ./images/img-4@2x.jpg 2x"
+                src="./images/img-4.jpg"
+                alt="Daniel Wilson"
+                width="264"
+              />
               <div class="person-info">
                 <h3 class="third-team-title margin">Daniel Wilson</h3>
                 <p class="team-paragraph">UI Designer</p>
@@ -291,13 +315,17 @@
         </div>
       </section>
 
-      <section class="portfolio section">
+      <section class="section">
         <div class="container">
           <h2 class="second-title title-margin">Our Portfolio</h2>
           <ul class="portfolio-list">
             <li class="portfolio-item">
               <div class="image-container">
                 <img
+                  srcset="
+                    ./images/img-1-portfolio.jpg    1x,
+                    ./images/img-1-portfolio@2x.jpg 2x
+                  "
                   src="./images/img-1-portfolio.jpg"
                   alt="Banking App"
                   width="360"
@@ -316,6 +344,10 @@
             <li class="portfolio-item">
               <div class="image-container">
                 <img
+                  srcset="
+                    ./images/img-2-portfolio.jpg    1x,
+                    ./images/img-2-portfolio@2x.jpg 2x
+                  "
                   src="./images/img-2-portfolio.jpg"
                   alt="Cashless Payment"
                   width="360"
@@ -334,6 +366,10 @@
             <li class="portfolio-item">
               <div class="image-container">
                 <img
+                  srcset="
+                    ./images/img-3-portfolio.jpg    1x,
+                    ./images/img-3-portfolio@2x.jpg 2x
+                  "
                   src="./images/img-3-portfolio.jpg"
                   alt="Meditation App"
                   width="360"
@@ -352,6 +388,10 @@
             <li class="portfolio-item">
               <div class="image-container">
                 <img
+                  srcset="
+                    ./images/img-4-portfolio.jpg    1x,
+                    ./images/img-4-portfolio@2x.jpg 2x
+                  "
                   src="./images/img-4-portfolio.jpg"
                   alt="Taxi Service"
                   width="360"
@@ -370,6 +410,10 @@
             <li class="portfolio-item">
               <div class="image-container">
                 <img
+                  srcset="
+                    ./images/img-5-portfolio.jpg    1x,
+                    ./images/img-5-portfolio@2x.jpg 2x
+                  "
                   src="./images/img-5-portfolio.jpg"
                   alt="Screen Illustrations"
                   width="360"
@@ -388,6 +432,10 @@
             <li class="portfolio-item">
               <div class="image-container">
                 <img
+                  srcset="
+                    ./images/img-6-portfolio.jpg    1x,
+                    ./images/img-6-portfolio@2x.jpg 2x
+                  "
                   src="./images/img-6-portfolio.jpg"
                   alt="Online Courses"
                   width="360"
@@ -408,10 +456,10 @@
       </section>
     </main>
 
-    <footer class="footer">
+    <footer class="footer section">
       <div class="container footer-container">
         <div class="footer-info-container">
-          <a href="./index.html" class="header-logo footer-link"
+          <a href="./index.html" class="footer-logo"
             >Web<span class="web-footer">Studio</span></a
           >
 
@@ -478,7 +526,7 @@
       </div>
     </footer>
 
-    <div class="modal-overlay is-open">
+    <div class="modal-overlay">
       <div class="modal">
         <button type="button" class="cross-btn">
           <svg class="cross-icon" width="8" height="8">
@@ -559,12 +607,84 @@
                   <use href="./images/icons.svg#icon-accept"></use>
                 </svg>
               </span>
-              I accept the terms and conditions of the
-              <a href="" class="privacy">Privacy Policy</a></label
+              <div class="privacy-container">
+                I accept the terms and conditions of the
+                <a href="" class="privacy">Privacy Policy</a>
+              </div></label
             >
           </div>
           <button type="submit" class="send-btn">Send</button>
         </form>
+      </div>
+    </div>
+
+    <div class="burger-overlay">
+      <div class="burger">
+        <button type="button" class="cross-btn cross-btn-burger">
+          <svg class="cross-icon" width="8" height="8">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+
+        <ul class="mobile-header-list">
+          <li class="mobile-header-nav-item">
+            <a href="" class="mobile-header-nav-link active-link">Studio</a>
+          </li>
+          <li class="mobile-header-nav-item">
+            <a href="" class="mobile-header-nav-link">Portfolio</a>
+          </li>
+          <li class="mobile-header-nav-item">
+            <a href="" class="mobile-header-nav-link">Contacts</a>
+          </li>
+        </ul>
+
+        <address class="mobile-header-info">
+          <ul class="mobile-header-info-list">
+            <li class="mobile-header-info-item">
+              <a href="tel:+110001111111" class="mobile-header-info-link"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+            <li class="mobile-header-info-item">
+              <a
+                href="mailto:info@devstudio.com"
+                class="mobile-header-info-link"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+        </address>
+
+        <ul class="burger-social-link-list">
+          <li class="social-link-item">
+            <a href="" class="social-link">
+              <svg class="social-link-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-link-item">
+            <a href="" class="social-link">
+              <svg class="social-link-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-link-item">
+            <a href="" class="social-link">
+              <svg class="social-link-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-link-item">
+            <a href="" class="social-link">
+              <svg class="social-link-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
       </div>
     </div>
   </body>
