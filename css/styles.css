@@ -157,6 +157,10 @@ address {
   min-height: 100vh;
 
   overflow: auto;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .cross-btn.cross-btn-burger {
@@ -167,8 +171,8 @@ address {
   display: flex;
   flex-direction: column;
   gap: 40px;
-  margin-top: 72px;
-  margin-left: 16px;
+  padding-top: 72px;
+  padding-left: 16px;
 }
 
 .mobile-header-nav-link {
@@ -187,12 +191,17 @@ address {
   color: #404bbf;
 }
 
+.info-container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
 .mobile-header-info-list {
   display: flex;
   flex-direction: column;
   gap: 24px;
-  margin-top: 168px;
-  margin-left: 16px;
+  padding-left: 16px;
 }
 
 .mobile-header-info-link {
@@ -214,13 +223,15 @@ address {
   display: flex;
   align-items: center;
   gap: 40px;
-  margin-top: 40px;
-  margin-left: 16px;
+  padding-left: 16px;
+  padding-bottom: 40px;
 }
 
 /*      HERO     */
 
 .hero {
+  max-width: 1440px;
+  margin: 0 auto;
   background-color: #2e2f42;
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
@@ -322,6 +333,7 @@ address {
 .team-list {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 72px;
 }
 
@@ -555,7 +567,8 @@ address {
 }
 
 .subscribe-btn {
-  min-width: 165px;
+  width: 165px;
+  margin: 0 auto;
   border-radius: 4px;
   padding: 8px 24px;
   background: #4d5ae5;
@@ -885,7 +898,6 @@ address {
 
   .benefits-list {
     flex-wrap: wrap;
-    row-gap: 72px;
   }
 
   .benefits-item {
@@ -978,6 +990,7 @@ address {
   .benefits-list {
     flex-direction: row;
     gap: 24px;
+    row-gap: 72px;
   }
 
   .benefits-title {
